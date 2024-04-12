@@ -1,24 +1,42 @@
-body{
+body {
     background: url('images/bg.jpg') rgba(0, 0, 0, 0.1);
     background-blend-mode: multiply;
     background-position: center;
     background-size: cover;
     background-repeat: no-repeat;
     font-family: "Poppins", sans-serif;
+    height:fit-content;
 }
 
-.dp{
-    height:400px;
+::-webkit-scrollbar {
+    width: 8px;
 }
 
-.welcomeText{
+::-webkit-scrollbar-track {
+    background-color: black;
+}
+
+::-webkit-scrollbar-thumb {
+    background: #888;
+    border-radius: 10px;
+}
+
+::-webkit-scrollbar-thumb:hover {
+    background: #555;
+}
+
+.dp {
+    height: 400px;
+}
+
+.welcomeText {
     font-size: 50px;
 }
 
 .animateText {
     animation: slideInText 1s ease forwards 4000ms;
     opacity: 0;
-    color:aliceblue
+    color: aliceblue
 }
 
 @keyframes slideInText {
@@ -50,9 +68,15 @@ body{
     }
 }
 
-@media (max-width:991px){
-    .sidebar{
+
+.about{
+    background-color: aliceblue;
+}
+
+@media (max-width:991px) {
+    .sidebar {
         background-color: rgba(255, 255, 255, 0.15);
         backdrop-filter: blur(10px);
     }
+
 }
