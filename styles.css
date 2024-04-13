@@ -1,11 +1,18 @@
 body {
+    font-family: "Poppins", sans-serif;
+    padding: 0;
+    margin: 0;
     background: url('images/bg.jpg') rgba(0, 0, 0, 0.1);
     background-blend-mode: multiply;
     background-position: center;
     background-size: cover;
     background-repeat: no-repeat;
-    font-family: "Poppins", sans-serif;
-    height:fit-content;
+    height: 100%;
+}
+
+html{
+    padding: 0;
+    margin: 0;
 }
 
 ::-webkit-scrollbar {
@@ -13,7 +20,7 @@ body {
 }
 
 ::-webkit-scrollbar-track {
-    background-color: black;
+    background-color: rgba(255,255,255, 0);
 }
 
 ::-webkit-scrollbar-thumb {
@@ -23,6 +30,17 @@ body {
 
 ::-webkit-scrollbar-thumb:hover {
     background: #555;
+}
+
+.navbar {
+    transition: all 0.5s;
+    /* height: 70px; */
+}
+
+.navbar-scrolled {
+    background-color: rgba(74, 72, 72, 0.75);
+    backdrop-filter: blur(10px);
+    box-shadow: 0 3px 10px rgba(0, 0, 0, 0.15);
 }
 
 .dp {
@@ -68,9 +86,52 @@ body {
     }
 }
 
-
-.about{
+section {
     background-color: aliceblue;
+    width: 100%;
+}
+
+.about {
+    /* background-color: aliceblue; */
+    /* position: relative; */
+    /* top: 50px; */
+}
+
+.progress {
+    background-color: #dcdcdc;
+}
+
+.progress-bar {
+    background-color: #ffb727;
+}
+
+.resume-item {
+    border-left: 1px #000000 solid;
+}
+
+.resume-item:before {
+    content: "";
+    position: absolute;
+    display: inline-block;
+    width: 16px;
+    height: 16px;
+    border-radius: 50px;
+    left: -9px;
+    top: 0px;
+    background: #fff;
+    border: 2px solid #242525;
+}
+
+.resume-para {
+    padding-left: 12px;
+    padding-top: 10px;
+    font-size: 18px;
+    font-style: italic;
+}
+
+.item-head {
+    color: #eaa720;
+    font-size: 20px;
 }
 
 @media (max-width:991px) {
@@ -79,4 +140,18 @@ body {
         backdrop-filter: blur(10px);
     }
 
+    body {
+        height: 100%;
+        background-color: rgba(0, 0, 0, 0.8);
+    }
+
+    main {
+        padding: 0;
+        margin: 0;
+        background: url('images/bg.jpg') rgba(0, 0, 0, 0.1);
+        background-blend-mode: multiply;
+        background-position: center;
+        background-size: cover;
+        background-repeat: no-repeat;
+    }
 }

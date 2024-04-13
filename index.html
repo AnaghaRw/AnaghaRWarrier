@@ -14,14 +14,13 @@
     <script src="https://kit.fontawesome.com/3aecdbe258.js" crossorigin="anonymous"></script>
 </head>
 
-<body class="vh-150 overflow-x-hidden">
-
+<body class="overflow-x-hidden">
     <!-- Navbar -->
     <nav class="navbar navbar-dark navbar-expand-lg bg-transparent sticky-top">
-        <div class="container-fluid">
+        <div class="container-fluid align-middle">
             <!-- Logo -->
             <a class="navbar-brand m-2" href="#"><img src="images\Logo.png" style="height: 50px;"
-                    class="border rounded-circle"></a>
+                    class="logo border rounded-circle p-1"></a>
             <!-- Toggle Button -->
             <button class="navbar-toggler shadow-none border-0" type="button" data-bs-toggle="offcanvas"
                 data-bs-target="#offcanvasDarkNavbar" aria-controls="offcanvasDarkNavbar"
@@ -30,7 +29,7 @@
             </button>
             <!-- Sidebar -->
             <div class="sidebar offcanvas offcanvas-start w-50 p-2" tabindex="-1" id="offcanvasDarkNavbar"
-                aria-labelledby="offcanvasDarkNavbarLabel">
+                aria-labelledby="offcanvasDarkNavbarLabel" style="height:100vh;">
                 <div class="offcanvas-header">
                     <button type="button" class="btn-close btn-close-white" data-bs-dismiss="offcanvas"
                         aria-label="Close"></button>
@@ -38,7 +37,10 @@
                 <div class="offcanvas-body">
                     <ul class="navbar-nav justify-content-end flex-grow-1 pe-1 fs-5">
                         <li class="nav-item">
-                            <a class="nav-link active" aria-current="page" href="#about">About</a>
+                            <a class="nav-link active" aria-current="page" href="#">Home</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="#about">About</a>
                         </li>
                         <li class="nav-item">
                             <a class="nav-link" href="#">Projects</a>
@@ -51,12 +53,12 @@
             </div>
         </div>
     </nav>
-
     <main class="col-sm-11 ms-sm-auto col-lg-11 px-md-3 mt-md-5 pt-5 text-light mt-sm-1">
-        <div class="row mt-md-4">
+        <div class="row mt-md-5">
             <div class="col-md-6 text-center text-md-start mt-3">
                 <div class="welcomeText fw-bold" id="welcomeText"></div>
-                <h3 class="animateText fs-4 mt-4">A Second-year engineering student, designing solutions for a smarter world.
+                <h3 class="animateText fs-4 mt-4">A Second-year engineering student, designing solutions for a smarter
+                    world.
                 </h3>
             </div>
             <div class="col-md-6 text-center mt-2">
@@ -69,10 +71,79 @@
             </div>
         </div>
     </main>
-
     <section class="about" id="about">
-        <div class="container text-center">
-            <div class="fs-1 fw-bold">ABOUT ME</div>
+        <div class="container text-center my-5 position-relative">
+            <div class="fs-1 fw-bold" style="padding-top:100px;">ABOUT ME</div>
+            <div class="row mt-5">
+                <div class="col-md-6 ">
+                    <div><img src="images/Anagha1.jpg" class="img-fluid border-0 rounded-circle p-2 shadow-lg"
+                            style="height:400px;"></div>
+                </div>
+                <div class="col-md-6 mt-4">
+                    <div class="label text-md-start my-3">
+                        HTML
+                        <div class="progress mt-2 shadow" role="progressbar" aria-label="html" aria-valuenow="25"
+                            aria-valuemin="0" aria-valuemax="100">
+                            <div class="progress-bar" style="width: 100%">100%</div>
+                        </div>
+                    </div>
+                    <div class="label text-md-start my-3">
+                        CSS
+                        <div class="progress mt-2 shadow" role="progressbar" aria-label="html" aria-valuenow="25"
+                            aria-valuemin="0" aria-valuemax="100">
+                            <div class="progress-bar" style="width: 90%">90%</div>
+                        </div>
+                    </div>
+                    <div class="label text-md-start my-3">
+                        Javascript
+                        <div class="progress mt-2 shadow" role="progressbar" aria-label="html" aria-valuenow="25"
+                            aria-valuemin="0" aria-valuemax="100">
+                            <div class="progress-bar" style="width: 70%">70%</div>
+                        </div>
+                    </div>
+                    <div class="label text-md-start my-3">
+                        Bootstrap
+                        <div class="progress mt-2 shadow" role="progressbar" aria-label="html" aria-valuenow="25"
+                            aria-valuemin="0" aria-valuemax="100">
+                            <div class="progress-bar " style="width: 70%">70%</div>
+                        </div>
+                    </div>
+                    <div class="label text-md-start my-3">
+                        Figma
+                        <div class="progress mt-2 shadow" role="progressbar" aria-label="html" aria-valuenow="25"
+                            aria-valuemin="0" aria-valuemax="100">
+                            <div class="progress-bar " style="width: 60%">60%</div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-12 text-center">
+                <div class="resume-item text-start position-relative border-left mt-4 mx-5 p-2 pb-0">
+                    <p class="resume-para">As a second-year Computer Science
+                        student specializing in Data Science, I am captivated by the
+                        fusion of technology and data-driven insights. My academic pursuits have equipped me with a
+                        solid foundation in computer science principles, statistical analysis, and machine learning
+                        algorithms. I've embarked on introductory projects, delving into data manipulation,
+                        visualization, and predictive modeling, which have bolstered my practical skills and deepened my
+                        understanding of data science methodologies.</p>
+                    <p class="resume-para"> Driven by a passion for innovation, I eagerly anticipate further exploration
+                        of complex datasets
+                        and the application of advanced statistical techniques. Beyond the classroom, I dedicate time to
+                        immerse myself in emerging trends in data science, experimenting with new tools and technologies
+                        to enhance my proficiency. I aspire to leverage my expertise to tackle real-world challenges,
+                        harnessing the power of data to drive informed decision-making and create tangible impact in
+                        diverse domains.</p>
+                    <p class="resume-para">Committed to continuous learning and professional development, I am eager to
+                        collaborate with peers and industry professionals, contributing my unique insights and
+                        leveraging collective expertise to push the boundaries of data science. With a steadfast
+                        commitment to excellence and a hunger for knowledge, I am excited to embark on this
+                        transformative journey towards becoming a proficient data scientist.</p>
+                </div>
+                <div class="resume-heading fs-3 fw-bold text-md-start">Education</div>
+                <div class="resume-item text-start position-relative border-left mt-4 mx-5 p-2 pb-0">
+                    <div class="item-head fw-bold">BACHELOR OF COMPUTER SCIENCE ENGINEERING SPEC. IN DATA SCIENCE</div>
+                </div>
+            </div>
         </div>
     </section>
 
