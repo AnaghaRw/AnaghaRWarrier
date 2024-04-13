@@ -43,6 +43,10 @@ html{
     box-shadow: 0 3px 10px rgba(0, 0, 0, 0.15);
 }
 
+.nav-item a:hover{
+    color:#eaa720;
+}
+
 .dp {
     height: 400px;
 }
@@ -86,15 +90,9 @@ html{
     }
 }
 
-section {
+.about {
     background-color: aliceblue;
     width: 100%;
-}
-
-.about {
-    /* background-color: aliceblue; */
-    /* position: relative; */
-    /* top: 50px; */
 }
 
 .progress {
@@ -102,7 +100,7 @@ section {
 }
 
 .progress-bar {
-    background-color: #ffb727;
+    background-color: #eaa720;
 }
 
 .resume-item {
@@ -125,13 +123,24 @@ section {
 .resume-para {
     padding-left: 12px;
     padding-top: 10px;
-    font-size: 18px;
+    font-size: 16px;
     font-style: italic;
 }
 
 .item-head {
+    padding-left:10px;
     color: #eaa720;
     font-size: 20px;
+}
+
+.item-year{
+    background-color: #dcdcdc;
+    width:100px;
+    text-align: center;
+    font-style: italic;
+    font-weight: 600;
+    padding: 5px;
+    border-radius: 5px;
 }
 
 @media (max-width:991px) {
