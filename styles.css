@@ -10,7 +10,7 @@ body {
     height: 100%;
 }
 
-html{
+html {
     padding: 0;
     margin: 0;
 }
@@ -20,7 +20,7 @@ html{
 }
 
 ::-webkit-scrollbar-track {
-    background-color: rgba(255,255,255, 0);
+    background-color: rgba(255, 255, 255, 0);
 }
 
 ::-webkit-scrollbar-thumb {
@@ -43,8 +43,8 @@ html{
     box-shadow: 0 3px 10px rgba(0, 0, 0, 0.15);
 }
 
-.nav-item a:hover{
-    color:#eaa720;
+.nav-item a:hover {
+    color: #eaa720;
 }
 
 .dp {
@@ -128,19 +128,70 @@ html{
 }
 
 .item-head {
-    padding-left:10px;
+    padding-left: 10px;
     color: #eaa720;
     font-size: 20px;
 }
 
-.item-year{
+.item-year {
     background-color: #dcdcdc;
-    width:100px;
+    width: 100px;
     text-align: center;
     font-style: italic;
     font-weight: 600;
     padding: 5px;
     border-radius: 5px;
+}
+
+.portfolio-image img:hover {
+    transform: scale(1.2);
+}
+
+.portfolio-image img:hover+.img-info {
+    opacity: 1;
+}
+
+.portfolio-image img {
+    transition: transform 0.5s ease-in-out;
+    align-items: center;
+}
+
+.img-info {
+    opacity: 0;
+    position: absolute;
+    left: 15px;
+    bottom: 0;
+    z-index: 3;
+    right: 15px;
+    transition: all ease-in-out 0.3s;
+    background: rgba(0, 0, 0, 0.5);
+    padding: 10px 15px;
+}
+
+.prof {
+    border: 1px #eaa720 solid;
+    border-radius: 10px;
+    /* width: 522px; */
+    /* padding: 10px; */
+    background-color: rgba(0, 0, 0, 0.4);
+    box-shadow: 0 5px 10px rgba(0, 0, 0, 0.9);
+
+}
+
+.cont {
+    background-color: rgba(255, 255, 255, 0.1);
+    backdrop-filter: blur(20px);
+    border-radius: 20px;
+}
+
+.icon {
+    color: #eaa720;
+    padding-top: 32px;
+    margin: 20px;
+    border: 2px rgba(255, 255, 255, 0.3) solid;
+    border-radius: 50%;
+    height: 70px;
+    width: 70px;
 }
 
 @media (max-width:991px) {
@@ -162,5 +213,17 @@ html{
         background-position: center;
         background-size: cover;
         background-repeat: no-repeat;
+    }
+
+    .portfolio-image {
+        align-items: center;
+    }
+
+    .portfolio-image img {
+        width: 90%;
+    }
+
+    .prof {
+        width: auto;
     }
 }
