@@ -178,30 +178,32 @@
                 <br><br>Thank you for taking the time to explore my work!
             </div>
             <div class="portfolio-image row mt-5 text-sm-center" style="left:-50px; right:50px;">
-                <div class="overflow-hidden col-md-4 m-4 p-2 rounded" style="width: 350px; height:350px;">
-                    <img class="img-fluid" src="images/portfolio-1.jpeg">
-                    <div class="img-info rounded-2">
-                        <h6>Mobile App for Aid Reach</h6>
-                        <p>Mobile App Design</p>
+                <div class="overflow-hidden col-md-4 m-4 p-2 rounded position-relative"
+                    style="width: 350px; height:350px;">
+                    <img class="img" src="images/portfolio/portfolio-1.jpeg" height="320px">
+                    <div class="info">
+                        <h5>Mobile App for Aid Reach</h6>
+                            <p>Mobile App Design</p>
                     </div>
                 </div>
-                <div class="overflow-hidden col-md-4 m-4 p-2 rounded" style="width: 350px; height:350px;">
-                    <img class="img-fluid" src="images/portfolio-2.jpeg">
-                    <div class="img-info rounded-">
-                        <h5>Mobile App for Aid Reach</h5>
-                        <p>Mobile App Design</p>
-                        <a href="images/portfolio-2.jpeg" data-gallery="portfolioGallery"
-                            class="portfolio-lightbox preview-link" title="Graphic Banner"><i
-                                class="bx bx-plus"></i></a>
+                <div class="overflow-hidden col-md-4 m-4 p-2 rounded position-relative"
+                    style="width: 350px; height:350px;">
+                    <img class="img" src="images/portfolio/portfolio-2.jpeg" height="320px">
+                    <div class="info">
+                        <h5>Graphic Banner</h5>
+                        <p>Graphic Designing</p>
+                        <!-- <a href="images/portfolio/portfolio-2.jpeg" data-gallery="portfolioGallery"
+                            class="portfolio-lightbox preview-link" title="Graphic Banner"><i class="fa-solid fa-plus"></i></a> -->
                     </div>
                 </div>
             </div>
         </div>
     </section>
 
-    <section class="contact vh-md-80 " id="contact" >
+    <section class="contact vh-md-80 mb-5" id="contact">
         <div class="cont container mt-4 text-light mt-4 pt-3">
-            <div class="fs-1 text-center text-light fw-bold" style="padding-top:60px; text-shadow: -3px 3px 5px rgba(255, 255, 255, 0.2)">CONTACT ME</div>
+            <div class="fs-1 text-center text-light fw-bold"
+                style="padding-top:60px; text-shadow: -3px 3px 5px rgba(255, 255, 255, 0.2)">CONTACT ME</div>
             <div class="text-center fst-italic mt-3">I would love to hear from you! Whether you are interested in
                 collaborating on a project, discussing a
                 potential internship opportunity, or simply sharing your thoughts and feedback, please don't hesitate to
@@ -223,7 +225,7 @@
                             <h4>Email Me</h4>
                             <i class="icon fa-sharp fa-regular fa-envelope fa-2xl"></i>
                             <p class="fst-italic" style="font-size: 14px;">anagha.r.warrier@gmail.com</p>
-                        </div> 
+                        </div>
                         <div class="prof col-md-6 text-center mt-4 py-4" style="width:48%;">
                             <h4>Call Me</h4>
                             <i class="icon fa-solid fa-phone-volume fa-2xl"></i>
@@ -233,16 +235,50 @@
 
                 </div>
 
-                <div class="col-lg-6 p-3">
-                    <div class="prof text-center">
+                <!-- <div class="col-lg-6 p-3"> -->
+                <!-- <div class="prof text-center p-3">
                         <h4>Send a Message</h4>
-                    </div>
+                        <div class="row align-middle p-2">
+                            <div class="col-md-6">
+                                <input class="input-field" placeholder="First Name">
+                            </div>
+                            <div class="col-md-6">
+                                <input class="input-field" placeholder="Last Name">
+                        </div>
+                    </div> -->
+                <div class="prof msg col-lg-6 p-3 text-center mt-3">
+                    <form class="php-email-form">
+                        <h4 style="padding-top:20px">Send a message</h4>
+                        <div class="row pt-2">
+                            <div class="col-md-6 form-group mt">
+                                <input type="text" name="name" class="form-control" id="name" placeholder="Your Name"
+                                    required="">
+                            </div>
+                            <div class="col-md-6 form-group mt-3 mt-md-0">
+                                <input type="email" class="form-control" name="email" id="email"
+                                    placeholder="Your Email" required="">
+                            </div>
+                        </div>
+                        <div class="form-group mt-3">
+                            <input type="text" class="form-control" name="subject" id="subject" placeholder="Subject"
+                                required="">
+                        </div>
+                        <div class="form-group mt-3">
+                            <textarea class="form-control" name="message" rows="6" placeholder="Message"
+                                required=""></textarea>
+                        </div>
+                        <!-- <div class="my-3">
+                            <div class="loading">Loading</div>
+                            <div class="error-message"></div>
+                            <div class="sent-message">Your message has been sent. Thank you!</div>
+                        </div> -->
+                        <div class="text-center mt-3">
+                            <button type="submit" class="btn btn-outline-warning">Send Message</button>
+                        </div>
+                    </form>
                 </div>
             </div>
-    </section>
-
-    <section>
-        <br><br>
+        </div>
     </section>
 
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"
